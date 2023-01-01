@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Website Design Using HTML And CSS</title> <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <div class="main">
+<nav>
+<div class="logo">
+<img src="images/sg.jpg"> </div>
+<div class="nav-links">
+<ul>
+<li><a href="#">Quiz</a></li> 
+<li><a href="#">Universities</a></li>
+<li><a href="#">Alumini</a></li>
+<li><a href="#">User Guide</a></li>
+</ul>
+</div>
+</nav>
+  <div class="information">
+      <div class="overlay"></div>
+      <img src="images/front.jpg" class="front">
+      <div id="circle">
+          <div class="feature one">
+                <img src="images/guide.jpg">
+              <div>
+              <h1> USER GUIDE</h1>
+              <p> Click here to get a guideline for your studies.</p>
+              </div>
+          </div>
+          <div class="feature two">
+                <img src="images/cp.jpg">
+              <div>
+              <h1> ADVICE</h1>
+              <p> Click here to get advice from the respective aluminis.</p>
+              </div>
+          </div>
+          <div class="feature three">
+                <img src="images/uni.jpg">
+              <div>
+              <h1> UNIVERSITIES</h1>
+              <p> Click here to get the list of universities available .</p>
+              </div>
+          </div>
+          <div class="feature four">
+                <img src="images/phone.jpg">
+              <div>
+              <h1> PHONE</h1>
+              <p> Click here to get contact of the universities.</p>
+              </div>
+          </div>
+</div>
+</div> 
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3> Features</h3>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+</div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+  
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        
+        
+        upBtn.onclick=function()
+        {
+          rotateSum = rotateValue + "rotate(-90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+        }
+        downBtn.onclick=function()
+        {
+          rotateSum = rotateValue + "rotate(90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+        }
+    
+        
+    </script>
+</body> 
+</html>
